@@ -17,21 +17,13 @@ const AppContent = () => {
       <Wrapper>
         <Header>
           <HeaderTop>
-            <Title>Party line</Title>
+            <Title>Spear Talk</Title>
             <Logo src={logo} className="App-logo" alt="logo" />
           </HeaderTop>
-          <SmallText>An audio API demo from Daily</SmallText>
+          <SmallText>Now with Audio Rooms</SmallText>
         </Header>
         {view === PREJOIN && <PreJoinRoom />}
         {view === INCALL && <InCall />}
-        <Link
-          center={view === INCALL}
-          href="https://docs.daily.co/docs/reference-docs"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn more about this demo
-        </Link>
       </Wrapper>
     </AppContainer>
   );
